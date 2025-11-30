@@ -6,11 +6,17 @@ int main()
 {
 
     string s;
-    cin >> s;
 
-    sort(s.begin(), s.end());
+    getline(cin, s);
 
-    cout << s << endl;
+    stringstream ss(s);
+    string word;
+
+    while (ss >> word)
+    {
+        reverse(word.begin(), word.end());
+        cout << " " << word;
+    }
 
     return 0;
 }
