@@ -8,11 +8,18 @@ int main()
     cin >> t;
     while (t--)
     {
-        int n;
-        cin >> n;
 
-        double d = (double)n / 4;
-        cout << ceil(d) << endl;
+        int n, m;
+        cin >> n >> m;
+
+        if (m <= n - 1)
+        {
+            cout << "YES\n";
+        }
+        else
+        {
+            cout << "NO\n";
+        }
     }
 
     return 0;
